@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Feedly Filter
 // @namespace    https://gist.github.com/soerenkoehler
-// @version      0.1
+// @version      1.0
 // @description  Mark entries in feedly's web UI.
 // @author       https://gist.github.com/soerenkoehler
 // @match        *://feedly.com/*
@@ -11,13 +11,25 @@
 (function() {
     'use strict';
 
-    initialize();
-    filter.Timer(10000, Infinity);
+    var origASK = devhd.io.ASK;
+    devhd.io.ASK= function(a, b) {
+        if(a.url.indexOf('streams/contents')>=0) {
+            var origOnComplete = a.onComplete;
+            a.onComplete = function(c, d, e) {
+                var result = origOnComplete(c, d, e);
+                filter();
+                return result;
+            };
+        }
+        return origASK(a, b);
+    };
 })();
 
-function filter(start, count) {
-    if(document.visibilityState == 'visible') {
-        var links = document.querySelectorAll('a.title');
+function filter() {
+    var links = document.querySelectorAll('a.title');
+    if(links.length === 0) {
+        window.setTimeout(filter, 1000);
+    } else {
         for (var i = 0; i < links.length; i++ ) {
             applyFilters(links[i]);
         }
@@ -44,29 +56,4 @@ function matchesFilter(text, patterns) {
         }
     }
     return false;
-}
-
-function initialize() {
-    Function.prototype.Timer = function (interval, calls, onend) {
-        var count = 0;
-        var payloadFunction = this;
-        var startTime = new Date();
-        var callbackFunction = function () {
-            return payloadFunction(startTime, count);
-        };
-        var endFunction = function () {
-            if (onend) {
-                onend(startTime, count, calls);
-            }
-        };
-        var timerFunction = function () {
-            count++;
-            if (count <= calls && callbackFunction() !== false) {
-                window.setTimeout(timerFunction, interval);
-            } else {
-                endFunction();
-            }
-        };
-        timerFunction();
-    };
 }
