@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Feedly Filter
-// @namespace    https://gist.github.com/soerenkoehler
+// @namespace    https://github.com/soerenkoehler
 // @version      1.0
 // @description  Mark entries in feedly's web UI.
-// @author       https://gist.github.com/soerenkoehler
+// @author       https://github.com/soerenkoehler
 // @match        *://feedly.com/*
 // @grant        none
 // ==/UserScript==

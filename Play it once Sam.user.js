@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Play it once Sam
-// @namespace    https://gist.github.com/soerenkoehler
+// @namespace    https://github.com/soerenkoehler
 // @version      1.0
 // @description  Starts playlist entries in single video mode instead of playlist mode.
-// @author       https://gist.github.com/soerenkoehler
+// @author       https://github.com/soerenkoehler
 // @match        *://www.youtube.com/*
 // @grant        none
 // ==/UserScript==

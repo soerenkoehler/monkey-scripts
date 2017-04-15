@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Spiegel Online ROT-1 Decoder
-// @namespace    https://gist.github.com/soerenkoehler
-// @version      0.1
+// @name         SPON ROT-1 Decoder
+// @namespace    https://github.com/soerenkoehler
+// @version      1.0
 // @description  decodes ROT-1 encoding of <p>-Elements marked as 'obfuscated'
-// @author       https://gist.github.com/soerenkoehler
+// @author       https://github.com/soerenkoehler
 // @match        *://www.spiegel.de/*
 // @grant        none
 // ==/UserScript==
