@@ -38,6 +38,7 @@ function filter() {
 
 /* These are the rules - feel free to edit your local copy */
 function applyFilters(link) {
+    styleEntry(link, 'background:#cfc', ['/einestages/']);
     styleEntry(link, 'background:#ccf', ['/video/','zeit.de/thema/']);
     styleEntry(link, 'background:#fcc', ['ze.tt','bento.de','shop.zeit.de','/angebote/']);
 }
