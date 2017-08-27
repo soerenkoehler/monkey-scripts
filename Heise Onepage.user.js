@@ -6,6 +6,7 @@
 // @author       https://github.com/soerenkoehler
 // @match        *://www.heise.de/*/meldung/*
 // @exclude      *://www.heise.de/*artikelseite=*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 

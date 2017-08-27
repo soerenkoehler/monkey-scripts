@@ -5,6 +5,7 @@
 // @description  Moves up the content area on heise online, e.g. when banners are suppressed.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.heise.de/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 

@@ -5,6 +5,7 @@
 // @description  Always view Zeit Online articles on one page.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.zeit.de/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 

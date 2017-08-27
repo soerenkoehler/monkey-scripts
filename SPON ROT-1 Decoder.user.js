@@ -5,6 +5,7 @@
 // @description  decodes ROT-1 encoding of <p>-Elements marked as 'obfuscated'
 // @author       https://github.com/soerenkoehler
 // @match        *://www.spiegel.de/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 

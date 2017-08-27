@@ -5,6 +5,7 @@
 // @description  Mark entries in feedly's web UI.
 // @author       https://github.com/soerenkoehler
 // @match        *://feedly.com/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 

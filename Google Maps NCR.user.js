@@ -5,6 +5,7 @@
 // @description  Always use maps.google.com instead of local variant.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.google.de/maps*
+// @run-at       document-start
 // @grant        none
 // ==/UserScript==
 

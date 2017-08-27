@@ -5,6 +5,7 @@
 // @description  Starts playlist entries in single video mode instead of playlist mode.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.youtube.com/*
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
