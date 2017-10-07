@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  Moves up the content area on leo.org online, e.g. when banners are suppressed.
 // @author       https://github.com/soerenkoehler
+// @match        *://*leo.org/*
 // @match        *://*.leo.org/*
 // @run-at       document-end
 // @grant        none
