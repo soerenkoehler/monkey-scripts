@@ -31,10 +31,16 @@ function removeAPUN() {
 
 function filterVideoLinks() {
     if(window.location.pathname == '/playlist') {
-        var links = document.querySelectorAll('a.pl-video-title-link');
-        for (var i = 0; i < links.length; i++ ) {
-            processVideoLink(links[i]);
-        }
+        // processAllVideoLinks('a.ytd-playlist-video-renderer');
+        // processAllVideoLinks('a.ytd-thumbnail');
+        processAllVideoLinks('a.pl-video-title-link');
+    }
+}
+
+function processAllVideoLinks(selector) {
+    var links = document.querySelectorAll(selector);
+    for (var i = 0; i < links.length; i++ ) {
+        processVideoLink(links[i]);
     }
 }
 
