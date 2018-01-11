@@ -5,7 +5,7 @@
 // @description  Always view heise articles on one page.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.heise.de/*/meldung/*
-// @exclude      *://www.heise.de/*seite=*
+// @exclude      *://www.heise.de/*seite=all*
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
