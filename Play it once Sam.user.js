@@ -13,7 +13,7 @@
     'use strict';
 
     window.addEventListener('yt-navigate-start', goToSinglePlayer);
-    window.addEventListener('viewport-load', removeAutoplayButton);
+    window.addEventListener('yt-page-data-updated', removeAutoplayButton);
 })();
 
 function goToSinglePlayer() {
@@ -40,8 +40,9 @@ function removeAutoplayButton() {
     if(window.location.pathname == '/watch') {
         var buttons = document.querySelectorAll('paper-toggle-button.ytd-compact-autoplay-renderer');
         for(var i = 0; i < buttons.length; i++) {
-            buttons[i].checked = false;
-            buttons[i].fire('change');
+            if( buttons[i].checked ) {
+                buttons[i].click();
+            }
         }
     }
 }
