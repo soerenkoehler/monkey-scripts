@@ -6,7 +6,7 @@ redirection page. As this is ridiculous when you are the only user creating
 events, this script auto-skips the redirection page.
 ## Heise Onepage.user.js, ZON Onepage.user.js
 Since I'm quite able to use vertical scrollbars, I prefer reading articles on
-one page. These scripts auto-click the respective "on one page" links.
+one page. These scripts redirect to the one-page-versions of articles.
 ## Heise Topper.user.js, Leo.org Topper.user.js
 From some websites I remove some space wasting header elements. If the content
 area is on an absolut position, it may leave unused space at the top of the
