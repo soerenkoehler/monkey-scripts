@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    var links = document.getElementsByClassName('article-toc__onesie');
+    var links = document.querySelectorAll('.article-pager__all a');
     if( links.length == 1 ) {
         window.location.href = links[0].href;
     }
