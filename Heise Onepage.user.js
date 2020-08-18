@@ -4,8 +4,7 @@
 // @version      1.0
 // @description  Always view heise articles on one page.
 // @author       https://github.com/soerenkoehler
-// @match        *://www.heise.de/*/artikel/*
-// @match        *://www.heise.de/*/meldung/*
+// @match        *://www.heise.de/*
 // @exclude      *://www.heise.de/*seite=all*
 // @exclude      *://www.heise.de/*view=zoom*
 // @run-at       document-end
