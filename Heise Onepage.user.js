@@ -5,6 +5,7 @@
 // @description  Always view heise articles on one page.
 // @author       https://github.com/soerenkoehler
 // @match        *://www.heise.de/*
+// @exclude      *://www.heise.de/forum*
 // @exclude      *://www.heise.de/*seite=all*
 // @exclude      *://www.heise.de/*view=zoom*
 // @run-at       document-end
