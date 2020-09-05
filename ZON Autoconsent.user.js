@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name ZON Autoconsent
-// @namespace https://github.com/soerenkoehler
-// @version 1.0
-// @description Autoclick Zeit Online consent button.
-// @author https://github.com/soerenkoehler
-// @match *://www.zeit.de/zustimmung*
-// @run-at document-end
-// @grant none
+// @name         ZON Autoconsent
+// @namespace    https://github.com/soerenkoehler
+// @version      1.0
+// @description  Autoclick Zeit Online consent button.
+// @author       https://github.com/soerenkoehler
+// @match        *://www.zeit.de/zustimmung*
+// @run-at       document-end
+// @grant        none
 // ==/UserScript==
 
 (function() {

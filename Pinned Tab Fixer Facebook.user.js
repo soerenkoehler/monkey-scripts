@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Pinned Tab Fixer: Facebook
+// @name         Pinned Tab Fixer Facebook
 // @namespace    https://github.com/soerenkoehler
 // @version      1.0
 // @description  Fix Mastodon in pinned tab.
