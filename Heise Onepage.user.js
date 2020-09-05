@@ -15,5 +15,8 @@
 (function() {
     'use strict';
 
-    window.location.href = window.location.href.split('?')[0] + '?seite=all';
+    var button = document.querySelector('#pagination-all-on-one-page');
+    if( button ) {
+        button.click();
+    }
 })();
