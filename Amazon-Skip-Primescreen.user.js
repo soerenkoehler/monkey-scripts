@@ -17,7 +17,7 @@
         button = document.querySelector('.prime-no-thanks')
     }
     if( !button ) {
-        button = document.querySelector('#prime-declineCTA')
+        button = document.querySelector('.declineCTA')
     }
     if( button ) {
         button.click();
