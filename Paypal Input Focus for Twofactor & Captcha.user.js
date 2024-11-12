@@ -6,6 +6,7 @@
 // @author       https://github.com/soerenkoehler
 // @match        *://www.paypal.com/auth*
 // @match        *://www.paypal.com/signin*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=paypal.com
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==

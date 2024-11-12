@@ -6,6 +6,7 @@
 // @author       https://github.com/soerenkoehler
 // @match        *://www.amazon.de/gp/cart*
 // @match        *://www.amazon.de/gp/buy*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
 // @run-at       document-body
 // @grant        none
 // ==/UserScript==
