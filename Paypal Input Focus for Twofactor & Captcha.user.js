@@ -14,9 +14,17 @@
 (function() {
     'use strict';
 
-    var inputChecker = window.setInterval(function() {
-        if(focusField('#otpCode') || focusField('#captchaCode')) {
-            window.clearInterval(inputChecker);
+    var inputLogin = false;
+    var inputPwd = false;
+    var input2FA = false;
+
+    var checkLoop = window.setInterval(function() {
+        inputLogin |= focusField('#email');
+        inputPwd |= focusField('#password');
+        input2FA |= focusField('#otpCode') || focusField('#captchaCode')
+        if(inputLogin && input2FA) {
+            window.clearInterval(checkLoop);
+            console.log('login done')
         }
     }, 250);
 })();
